@@ -1,0 +1,12 @@
+<header>
+  <div class="logo">NestedAuthPry</div>
+  <div class="login">
+    <%= form_tag signin_path do %>
+    <%= label_tag :email %>
+    <%= email_field_tag :email %>
+    <%= label_tag :password %>
+    <%= password_field_tag :password %>
+    <%= submit_tag 'Sign In' %>
+    <% end %>
+  </div>
+</header>

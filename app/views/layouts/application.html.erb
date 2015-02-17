@@ -7,11 +7,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <header>
-    <div class="logo">NestedAuthPry</div>
-    <div class="login">
+<header>
+  <div class="logo">NestedAuthPry</div>
+  <div class="login">
+      <%= link_to 'Sign Up', signup_path %>
+      <%= link_to 'Sign In', signin_path %>
+      <%= link_to 'Sign Out', signout_path %>
+  </div>
+</header>
 
-  </header>
   <%= yield %>
 
 </body>
